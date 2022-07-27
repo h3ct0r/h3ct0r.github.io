@@ -1,0 +1,6 @@
+
+          <div class="publications">
+            <h2>Selected publications <span>[<a class="publications-link" href="{{ '/publications/' | relative_url }}">full list</a>]</span></h2>
+            {% bibliography -f journal -q @*[selected=true]* %}
+            {% bibliography -f conference -q @*[selected=true]* %}
+          </div>

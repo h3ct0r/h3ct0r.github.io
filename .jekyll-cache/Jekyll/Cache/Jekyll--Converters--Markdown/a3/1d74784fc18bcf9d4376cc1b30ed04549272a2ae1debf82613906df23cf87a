@@ -1,0 +1,844 @@
+I"1�<div>
+    <h3>Abstract</h3>
+    This thesis project addresses the problem of exploring confined environments autonomously using terrestrial mobile robots. Here we propose a methodology for path planning in rough three-dimensional terrains and two exploration techniques that use the map's navigable areas, the related navigation cost, and the information expected from a frontier to select the next exploration sector. The presented pipelines are built over a representation of the environment based on three-dimensional meshes and raw point clouds. The reconstructed meshes are converted into traversable graphs, and the dangerous or untraversable regions are filtered considering the expected pose of the robot at the time of planning. The generation of the most promising paths uses a linear combination of weights applied to multiple traversability metrics of the terrain, such as distance, roughness, and energy consumption of the robot. The proposed exploration method uses the expected volumetric information of frontiers after visitation; this way, the exploration areas are selected according to their expected utility and visit cost, considering the terrain's topography. We also propose an online planning phase using the raw point cloud to avoid obstacles in dynamic environments. The online phase is faster to compute and uses an RRT algorithm biased towards the most informative frontier, which is capable of planning and selecting a target frontier without specifying a hardcoded utility metric. The algorithms were validated in representative simulated and real environments, proving the viability of the proposed methodologies.
+</div>
+
+<div class="publications">
+    <h3>Downloads</h3>
+    <p><i class="fa fa-book" aria-hidden="true"></i><a href="https://homepages.dcc.ufmg.br/~hector.azpurua/phd_dissertation_jul22_hector_azpurua.pdf">&nbsp;Ph.D. dissertation</a></p>
+    <p><i class="fab fa-github-alt" aria-hidden="true"></i><a href="https://github.com/verlab/terrain_aware_exploration">&nbsp;Github source code</a></p>
+</div>
+
+<div class="publications">
+    <h3>Defense Information</h3>
+    <div>
+        <ul class="card-text font-weight-light list-group list-group-flush">
+            <li class="list-group-item">
+            <h5 class="font-italic">Advisors</h5>
+                <ul class="subitems">
+                    <li><span class="subitem">Douglas G. Macharet (advisor)</span></li>
+                    <li><span class="subitem">Mario F. M. Campos (co-advisor)</span></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="publications">
+    <h3>Videos</h3>
+    <div class="video-desc-grid" style="display: flex; justify-content: space-between;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yXycgBDhSME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        &nbsp;
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Otboyqh6GWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+    
+    <div class="video-desc-grid" style="display: flex; justify-content: space-between; margin-top:10px;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/d6wrfBwOjv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        &nbsp;
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/aZu_y8-CS9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+</div>
+
+<div class="publications">
+    <h3>Related publications</h3>
+    <ol class="bibliography"><li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Journal: Rob</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="azpurua2022survey" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">A Survey on the Autonomous Exploration of Confined Subterranean Spaces: Perspectives from Real-word and Industrial Robotic Deployments</div>
+          <!-- Author -->
+          <div class="author">
+          
+                  <em>Azpúrua, Héctor</em>,&nbsp;M. Freitas, Gustavo,&nbsp;Clark, Lillian,&nbsp;Agha-mohammadi, Ali-akbar,&nbsp;
+                Pessin, Gustavo
+
+          
+            
+            
+            and
+            <span class="more-authors" title="click to view 2 more authors" onclick="
+                  var element = $(this);
+                  element.attr('title', '');
+                  var more_authors_text = element.text() == '2 more authors' ? 'F. M. Campos, Mario,&nbsp;G. Macharet, Douglas' : '2 more authors';
+                  var cursorPosition = 0;
+                  var textAdder = setInterval(function(){
+                    element.text(more_authors_text.substring(0, cursorPosition + 1));
+                    if (++cursorPosition == more_authors_text.length){
+                      clearInterval(textAdder);
+                    }
+                  }, 15);
+                ">2 more authors</span>
+          
+
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>Journal of Robotics and Autonomous Systems</em> 2022
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          <div class="abstract">
+            <p>(Under revision)</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Journal: Field Robotics</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="ali2022nebula" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">An Addendum to NeBula: Towards Extending TEAM CoSTAR’s Solution to Larger Scale Environments</div>
+          <!-- Author -->
+          <div class="author">
+          Agha, Ali,&nbsp;Otsu, Kyohei,&nbsp;Morrell, Benjamin,&nbsp;Fan, David D.,&nbsp;
+                Kim, Sung-Kyun
+
+          
+            
+            
+            and
+            <span class="more-authors" title="click to view 84 more authors" onclick="
+                  var element = $(this);
+                  element.attr('title', '');
+                  var more_authors_text = element.text() == '84 more authors' ? 'Ginting, Muhammad Fadhil,&nbsp;Lei, Xianmei,&nbsp;Edlund, Jeffrey,&nbsp;Fakoorian, Seyed,&nbsp;Bouman, Amanda,&nbsp;Chavez, Fernando,&nbsp;Kim, Taeyeon,&nbsp;Correa, Gustavo J.,&nbsp;Saboia, Maira,&nbsp;Santamaria-Navarro, Angel,&nbsp;Lopez, Brett,&nbsp;Kim, Boseong,&nbsp;Jung, Chanyoung,&nbsp;Sobue, Mamoru,&nbsp;Peltzer, Oriana Claudia,&nbsp;Ott, Joshua,&nbsp;Trybula, Robert,&nbsp;Touma, Thomas,&nbsp;Kaufmann, Marcel,&nbsp;Vaquero, Tiago Stegun,&nbsp;Pailevanian, Torkom,&nbsp;Palieri, Matteo,&nbsp;Chang, Yun,&nbsp;Reinke, Andrzej,&nbsp;Anderson, Matthew,&nbsp;Scholler, Frederik E.T.,&nbsp;Spieler, Patrick,&nbsp;Clark, Lillian M.,&nbsp;Archanian, Avak,&nbsp;Chen, Kenny,&nbsp;Melikyan, Hov,&nbsp;Dixit, Anushri,&nbsp;Delecki, Harrison,&nbsp;Pastor, Daniel,&nbsp;Ridge, Barry,&nbsp;Marchal, Nicolas,&nbsp;Uribe, Jose,&nbsp;Dey, Sharmita,&nbsp;Ebadi, Kamak,&nbsp;Coble, Kyle,&nbsp;Dimopoulos, Alexander Nikitas,&nbsp;Thangavelu, Vivek,&nbsp;Varadharajan, Vivek S.,&nbsp;Palomo, Nicholas,&nbsp;Rosinol, Antoni,&nbsp;Chatterjee, Arghya,&nbsp;Kanellakis, Christoforos,&nbsp;Lindqvist, Bjorn,&nbsp;Corah, Micah,&nbsp;Strickland, Kyle,&nbsp;Stonebraker, Ryan,&nbsp;Milano, Michael,&nbsp;Denniston, Chris,&nbsp;Sahnoune, Sami,&nbsp;Claude, Thomas,&nbsp;Lee, Seungwook,&nbsp;Salhotra, Gautam,&nbsp;Terry, Edward,&nbsp;Musuku, Rithvik,&nbsp;Schmid, Robin,&nbsp;Tran, Tony,&nbsp;Kourchians, Ara,&nbsp;Schachter, Justin,&nbsp;Azpurua, Hector,&nbsp;Resende, Levi,&nbsp;Kalantari, Arash,&nbsp;Nash, Jeremy,&nbsp;Lee, Josh,&nbsp;Patterson, Christopher,&nbsp;Blank, Jen,&nbsp;Patath, Kartik,&nbsp;Kubo, Yuki,&nbsp;Alimo, Ryan,&nbsp;Almalioglu, Yasin,&nbsp;Curtis, Aaron,&nbsp;Sly, Jacqueline,&nbsp;Wells, Tesla,&nbsp;Ho, Nhut T.,&nbsp;Kochenderfer, Mykel,&nbsp;Beltrame, Giovanni,&nbsp;Nikolakopoulos, George,&nbsp;Shim, David,&nbsp;Carlone, Luca,&nbsp;Burdick, Joel' : '84 more authors';
+                  var cursorPosition = 0;
+                  var textAdder = setInterval(function(){
+                    element.text(more_authors_text.substring(0, cursorPosition + 1));
+                    if (++cursorPosition == more_authors_text.length){
+                      clearInterval(textAdder);
+                    }
+                  }, 15);
+                ">84 more authors</span>
+          
+
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>Journal of Field Robotics</em> 2022
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          <div class="abstract">
+            <p>(Under revision)</p>
+          </div>
+        </div>
+      </div>
+</li>
+<li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Journal: T-ASE</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="junior2022ekf" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">EKF-LOAM: An Adaptive Fusion of LiDAR SLAM With Wheel Odometry and Inertial Data for Confined Spaces With Few Geometric Features</div>
+          <!-- Author -->
+          <div class="author">
+          Júnior, Gilmar P Cruz,&nbsp;Rezende, Adriano MC,&nbsp;Miranda, Victor RF,&nbsp;Fernandes, Rafael,&nbsp;
+                <em>Azpúrua, Héctor</em>
+                
+
+          
+            
+            
+            and
+            <span class="more-authors" title="click to view 3 more authors" onclick="
+                  var element = $(this);
+                  element.attr('title', '');
+                  var more_authors_text = element.text() == '3 more authors' ? 'Neto, Armando A,&nbsp;Pessin, Gustavo,&nbsp;Freitas, Gustavo M' : '3 more authors';
+                  var cursorPosition = 0;
+                  var textAdder = setInterval(function(){
+                    element.text(more_authors_text.substring(0, cursorPosition + 1));
+                    if (++cursorPosition == more_authors_text.length){
+                      clearInterval(textAdder);
+                    }
+                  }, 15);
+                ">3 more authors</span>
+          
+
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>IEEE Transactions on Automation Science and Engineering</em> 2022
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Journal: JINT</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="azpurua2021towards" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">Towards semi-autonomous robotic inspection and mapping in confined spaces with the espeleorobô</div>
+          <!-- Author -->
+          <div class="author">
+          
+                  <em>Azpúrua, Héctor</em>,&nbsp;Rezende, Adriano,&nbsp;Potje, Guilherme,&nbsp;Júnior, Gilmar Pereira da Cruz,&nbsp;
+                Fernandes, Rafael
+
+          
+            
+            
+            and
+            <span class="more-authors" title="click to view 6 more authors" onclick="
+                  var element = $(this);
+                  element.attr('title', '');
+                  var more_authors_text = element.text() == '6 more authors' ? 'Miranda, Victor,&nbsp;Domingues, Jacó,&nbsp;Rocha, Filipe,&nbsp;Sousa, Frederico Luiz Martins,&nbsp;Barros, Luiz Guilherme Dias,&nbsp;others, ' : '6 more authors';
+                  var cursorPosition = 0;
+                  var textAdder = setInterval(function(){
+                    element.text(more_authors_text.substring(0, cursorPosition + 1));
+                    if (++cursorPosition == more_authors_text.length){
+                      clearInterval(textAdder);
+                    }
+                  }, 15);
+                ">6 more authors</span>
+          
+
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>Journal of Intelligent &amp; Robotic Systems</em> 2021
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li></ol>
+    <ol class="bibliography"><li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Conf: ICRA</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="azpurna2021three" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">Three-dimensional terrain aware autonomous exploration for subterranean and confined spaces</div>
+          <!-- Author -->
+          <div class="author">
+          
+                  <em>Azpúrua, Héctor</em>,&nbsp;Campos, Mario FM,&nbsp; and 
+                Macharet, Douglas G
+
+          
+
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>In 2021 IEEE International Conference on Robotics and Automation (ICRA)</em> 2021
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Conf: LARS</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="pereira2021towards" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">Towards a Simple Navigation Strategy for Autonomous Inspection of Ducts and Galleries</div>
+          <!-- Author -->
+          <div class="author">
+          Pereira, Guilherme,&nbsp;Duarte, Carolina,&nbsp;Marques, David,&nbsp;
+                  <em>Azpúrua, Héctor</em>,&nbsp;
+                Pessin, Gustavo
+
+          
+            
+            
+            and
+            <span class="more-authors" title="click to view 1 more author" onclick="
+                  var element = $(this);
+                  element.attr('title', '');
+                  var more_authors_text = element.text() == '1 more author' ? 'Freitas, Gustavo' : '1 more author';
+                  var cursorPosition = 0;
+                  var textAdder = setInterval(function(){
+                    element.text(more_authors_text.substring(0, cursorPosition + 1));
+                    if (++cursorPosition == more_authors_text.length){
+                      clearInterval(textAdder);
+                    }
+                  }, 15);
+                ">1 more author</span>
+          
+
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>In 2021 Latin American Robotics Symposium (LARS), 2021 Brazilian Symposium on Robotics (SBR), and 2021 Workshop on Robotics in Education (WRE)</em> 2021
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Conf: SBAI (Brazil)</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="leao2021exploraccao" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">Exploração autônoma de ambientes planares utilizando um dispositivo robótico móvel</div>
+          <!-- Author -->
+          <div class="author">
+          Leao, Lucca,&nbsp;Amaral, Israel,&nbsp;
+                  <em>Azpúrua, Héctor</em>,&nbsp;Rezende, Adriano,&nbsp;
+                Pessin, Gustavo
+
+          
+            
+            
+            and
+            <span class="more-authors" title="click to view 1 more author" onclick="
+                  var element = $(this);
+                  element.attr('title', '');
+                  var more_authors_text = element.text() == '1 more author' ? 'Freitas, Gustavo' : '1 more author';
+                  var cursorPosition = 0;
+                  var textAdder = setInterval(function(){
+                    element.text(more_authors_text.substring(0, cursorPosition + 1));
+                    if (++cursorPosition == more_authors_text.length){
+                      clearInterval(textAdder);
+                    }
+                  }, 15);
+                ">1 more author</span>
+          
+
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>In Simpósio Brasileiro de Automação Inteligente-SBAI</em> 2021
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Conf: SBAI (Brazil)</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="viana2021analise" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">Análise e Comparação dos Algoritmos RRT* e Dijkstra para Planejamento de Caminhos em Terrenos Acidentados</div>
+          <!-- Author -->
+          <div class="author">
+          Viana, Douglas,&nbsp;Amaral, Israel,&nbsp;Rezende, Adriano,&nbsp;
+                  <em>Azpúrua, Héctor</em>,&nbsp;
+                Pessin, Gustavo
+
+          
+            
+            
+            and
+            <span class="more-authors" title="click to view 1 more author" onclick="
+                  var element = $(this);
+                  element.attr('title', '');
+                  var more_authors_text = element.text() == '1 more author' ? 'Freitas, Gustavo' : '1 more author';
+                  var cursorPosition = 0;
+                  var textAdder = setInterval(function(){
+                    element.text(more_authors_text.substring(0, cursorPosition + 1));
+                    if (++cursorPosition == more_authors_text.length){
+                      clearInterval(textAdder);
+                    }
+                  }, 15);
+                ">1 more author</span>
+          
+
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>In Simpósio Brasileiro de Automação Inteligente-SBAI</em> 2021
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Conf: CASE</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="rezende2020indoor" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">Indoor localization and navigation control strategies for a mobile robot designed to inspect confined environments</div>
+          <!-- Author -->
+          <div class="author">
+          Rezende, Adriano MC,&nbsp;Júnior, Gilmar PC,&nbsp;Fernandes, Rafael,&nbsp;Miranda, Victor RF,&nbsp;
+                <em>Azpúrua, Héctor</em>
+                
+
+          
+            
+            
+            and
+            <span class="more-authors" title="click to view 2 more authors" onclick="
+                  var element = $(this);
+                  element.attr('title', '');
+                  var more_authors_text = element.text() == '2 more authors' ? 'Pessin, Gustavo,&nbsp;Freitas, Gustavo M' : '2 more authors';
+                  var cursorPosition = 0;
+                  var textAdder = setInterval(function(){
+                    element.text(more_authors_text.substring(0, cursorPosition + 1));
+                    if (++cursorPosition == more_authors_text.length){
+                      clearInterval(textAdder);
+                    }
+                  }, 15);
+                ">2 more authors</span>
+          
+
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>In 2020 IEEE 16th International Conference on Automation Science and Engineering (CASE)</em> 2020
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Conf: LARS</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="fernandes2020investigation" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">Investigation of Visual Reconstruction Techniques Using Mobile Robots in Confined Environments</div>
+          <!-- Author -->
+          <div class="author">
+          Fernandes, Rafael,&nbsp;Rocha, Thiago Lages,&nbsp;
+                  <em>Azpúrua, Héctor</em>,&nbsp;Pessin, Gustavo,&nbsp;
+                Neto, Armando Alves
+
+          
+            
+            
+            and
+            <span class="more-authors" title="click to view 1 more author" onclick="
+                  var element = $(this);
+                  element.attr('title', '');
+                  var more_authors_text = element.text() == '1 more author' ? 'Freitas, Gustavo' : '1 more author';
+                  var cursorPosition = 0;
+                  var textAdder = setInterval(function(){
+                    element.text(more_authors_text.substring(0, cursorPosition + 1));
+                    if (++cursorPosition == more_authors_text.length){
+                      clearInterval(textAdder);
+                    }
+                  }, 15);
+                ">1 more author</span>
+          
+
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>In 2020 Latin American Robotics Symposium (LARS), 2020 Brazilian Symposium on Robotics (SBR) and 2020 Workshop on Robotics in Education (WRE)</em> 2020
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Conf: LARS</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="cid2020simulated" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">A simulated environment for the development and validation of an inspection robot for confined spaces</div>
+          <!-- Author -->
+          <div class="author">
+          Cid, André,&nbsp;Nazário, Mateus,&nbsp;Sathler, Mauricio,&nbsp;Martins, Frederico,&nbsp;
+                Domingues, Jaco
+
+          
+            
+            
+            and
+            <span class="more-authors" title="click to view 6 more authors" onclick="
+                  var element = $(this);
+                  element.attr('title', '');
+                  var more_authors_text = element.text() == '6 more authors' ? 'Delunardo, Mário,&nbsp;Alves, Paulo,&nbsp;Teotônio, Rodrigo,&nbsp;Barros, Luiz Guilherme,&nbsp;Rezende, Adriano,&nbsp;others, ' : '6 more authors';
+                  var cursorPosition = 0;
+                  var textAdder = setInterval(function(){
+                    element.text(more_authors_text.substring(0, cursorPosition + 1));
+                    if (++cursorPosition == more_authors_text.length){
+                      clearInterval(textAdder);
+                    }
+                  }, 15);
+                ">6 more authors</span>
+          
+
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>In 2020 Latin American Robotics Symposium (LARS), 2020 Brazilian Symposium on Robotics (SBR) and 2020 Workshop on Robotics in Education (WRE)</em> 2020
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Conf: CBA (Brazil)</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="amaral2020sistema" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">Sistema de alertas e operação assistida de um robô para a inspeção de ambientes confinados-espeleorobô</div>
+          <!-- Author -->
+          <div class="author">
+          Amaral, Israel,&nbsp;Fany, Carolina,&nbsp;Simon, David,&nbsp;Matos, Lucas,&nbsp;
+                Araújo, Álvaro
+
+          
+            
+            
+            and
+            <span class="more-authors" title="click to view 5 more authors" onclick="
+                  var element = $(this);
+                  element.attr('title', '');
+                  var more_authors_text = element.text() == '5 more authors' ? 'Leão, Lucca,&nbsp;Rezende, Adriano,&nbsp;Azpúrua, Héctor,&nbsp;Pessin, Gustavo,&nbsp;Freitas, Gustavo' : '5 more authors';
+                  var cursorPosition = 0;
+                  var textAdder = setInterval(function(){
+                    element.text(more_authors_text.substring(0, cursorPosition + 1));
+                    if (++cursorPosition == more_authors_text.length){
+                      clearInterval(textAdder);
+                    }
+                  }, 15);
+                ">5 more authors</span>
+          
+
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>In Congresso Brasileiro de Automática CBA</em> 2020
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Conf: CBA (Brazil)</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="da2020investigaccao" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">Investigação de técnicas lidar slam para um dispositivo robótico de inspeção de ambientes confinados</div>
+          <!-- Author -->
+          <div class="author">
+          Cruz Júnior, Gilmar Pereira,&nbsp;Carmo Matos, Lucas Vinicius,&nbsp;
+                  <em>Azpúrua, Héctor</em>,&nbsp;Pessin, Gustavo,&nbsp;
+                Freitas, Gustavo Medeiros
+
+          
+            
+            
+            and
+            <span class="more-authors" title="click to view 1 more author" onclick="
+                  var element = $(this);
+                  element.attr('title', '');
+                  var more_authors_text = element.text() == '1 more author' ? 'Engenharia, Escola' : '1 more author';
+                  var cursorPosition = 0;
+                  var textAdder = setInterval(function(){
+                    element.text(more_authors_text.substring(0, cursorPosition + 1));
+                    if (++cursorPosition == more_authors_text.length){
+                      clearInterval(textAdder);
+                    }
+                  }, 15);
+                ">1 more author</span>
+          
+
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>In Congresso Brasileiro de Automática-CBA</em> 2020
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Conf: SBAI (Brazil)</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="santos2019planejamento" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">Planejamento de caminhos para robôs móveis em ambientes acidentados</div>
+          <!-- Author -->
+          <div class="author">
+          Santos, Alexandre Souza,&nbsp;
+                  <em>Azpúrua, Héctor</em>,&nbsp;Pessin, Gustavo,&nbsp; and 
+                Freitas, Gustavo Medeiros
+
+          
+
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>SBAI 2019</em> 2019
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Conf: SBAI (Brazil)</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="rochaanalise" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">Análise e Comparaçao de Mobilidade de um Robô com Locomoçao Reconfigurável</div>
+          <!-- Author -->
+          <div class="author">
+          Rocha, Filipe,&nbsp;
+                  <em>Azpúrua, Héctor</em>,&nbsp;Garcia, Gabriel,&nbsp;Cota, Eduardo,&nbsp;
+                Costa, Ramon R
+
+          
+            
+            
+            and
+            <span class="more-authors" title="click to view 1 more author" onclick="
+                  var element = $(this);
+                  element.attr('title', '');
+                  var more_authors_text = element.text() == '1 more author' ? 'Freitas, Gustavo' : '1 more author';
+                  var cursorPosition = 0;
+                  var textAdder = setInterval(function(){
+                    element.text(more_authors_text.substring(0, cursorPosition + 1));
+                    if (++cursorPosition == more_authors_text.length){
+                      clearInterval(textAdder);
+                    }
+                  }, 15);
+                ">1 more author</span>
+          
+
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>SBAI 2019</em> 2019
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Conf: ICAR</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="azpurua2019espeleorobo" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">EspeleoRobô-a robotic device to inspect confined environments</div>
+          <!-- Author -->
+          <div class="author">
+          Azpurua, Hector,&nbsp;Rocha, Filipe,&nbsp;Garcia, Gabriel,&nbsp;Santos, Alexandre Souza,&nbsp;
+                Cota, Eduardo
+
+          
+            
+            
+            and
+            <span class="more-authors" title="click to view 4 more authors" onclick="
+                  var element = $(this);
+                  element.attr('title', '');
+                  var more_authors_text = element.text() == '4 more authors' ? 'Barros, Luiz G,&nbsp;Thiago, Alexandre S,&nbsp;Pessin, Gustavo,&nbsp;Freitas, Gustavo Medeiros' : '4 more authors';
+                  var cursorPosition = 0;
+                  var textAdder = setInterval(function(){
+                    element.text(more_authors_text.substring(0, cursorPosition + 1));
+                    if (++cursorPosition == more_authors_text.length){
+                      clearInterval(textAdder);
+                    }
+                  }, 15);
+                ">4 more authors</span>
+          
+
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>In 2019 19th International Conference on Advanced Robotics (ICAR)</em> 2019
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Conf: CBA (Brazil)</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="cota2019avaliaccao" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">Avaliaçao de técnicas de odometria aplicadas a um dispositivo robótico móvel</div>
+          <!-- Author -->
+          <div class="author">
+          COTA, EDUARDO,&nbsp;ROCHA, FILIPE AUGUSTO SANTOS,&nbsp;AZPÚRUA, HÉCTOR,&nbsp; and 
+                FREITAS, GUSTAVO MEDEIROS
+
+          
+
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>In Congresso Brasileiro de Automática-CBA</em> 2019
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li>
+<li><!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-2 abbr"><abbr class="badge">Conf: LARS</abbr></div>
+
+        <!-- Entry bib key -->
+        <div id="santos2018path" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">Path planning for mobile robots on rough terrain</div>
+          <!-- Author -->
+          <div class="author">
+          Santos, Alexandre S,&nbsp;Azpúrua, Héctor Ignacio Perez,&nbsp;Pessin, Gustavo,&nbsp; and 
+                Freitas, Gustavo M
+
+          
+
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>In 2018 Latin American Robotic Symposium, 2018 Brazilian Symposium on Robotics (SBR) and 2018 Workshop on Robotics in Education (WRE)</em> 2018
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+          </div>
+
+          
+        </div>
+      </div>
+</li></ol>
+</div>
+:ET
