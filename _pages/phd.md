@@ -69,7 +69,15 @@ nav_order: 1
 </div>
 
 <div class="publications">
-    <h3>Related publications</h3>
+    <h3>Thesis Related Publications</h3>
     {% bibliography -f journal -q @*[phd=true]* %}
     {% bibliography -f conference -q @*[phd=true]* %}
+    {% bibliography -f workshop -q @*[phd=true]* %}
+</div>
+
+<div class="publications">
+    <h3>Other Associated Publications</h3>
+    {% bibliography -f journal -q @*[otherphd=true]* %}
+    {% bibliography -f conference -q @*[otherphd=true]* %}
+    {% bibliography -f workshop -q @*[otherphd=true]* %}
 </div>
