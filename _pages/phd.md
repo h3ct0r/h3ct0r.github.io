@@ -2,12 +2,16 @@
 layout: page
 permalink: /phd/
 title: Ph.D.
-description: Terrain-Aware Autonomous Exploration of Unstructured Confined Spaces
+description: Dissertation in the autonomous exploration of confined and subterranean spaces
 nav: true
 nav_order: 1
 ---
 
 <div>
+    <h2>Terrain-Aware Autonomous Exploration of Unstructured Confined Spaces</h2>
+<div>
+
+<div class="publications">
     <h3>Abstract</h3>
     This thesis project addresses the problem of exploring confined environments autonomously using terrestrial mobile robots. Here we propose a methodology for path planning in rough three-dimensional terrains and two exploration techniques that use the map's navigable areas, the related navigation cost, and the information expected from a frontier to select the next exploration sector. The presented pipelines are built over a representation of the environment based on three-dimensional meshes and raw point clouds. The reconstructed meshes are converted into traversable graphs, and the dangerous or untraversable regions are filtered considering the expected pose of the robot at the time of planning. The generation of the most promising paths uses a linear combination of weights applied to multiple traversability metrics of the terrain, such as distance, roughness, and energy consumption of the robot. The proposed exploration method uses the expected volumetric information of frontiers after visitation; this way, the exploration areas are selected according to their expected utility and visit cost, considering the terrain's topography. We also propose an online planning phase using the raw point cloud to avoid obstacles in dynamic environments. The online phase is faster to compute and uses an RRT algorithm biased towards the most informative frontier, which is capable of planning and selecting a target frontier without specifying a hardcoded utility metric. The algorithms were validated in representative simulated and real environments, proving the viability of the proposed methodologies.
 </div>
