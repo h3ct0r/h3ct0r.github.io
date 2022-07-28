@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I'm a Ph.D. graduate from the <a href="https://www.verlab.dcc.ufmg.br/">Computer Vision and Robotics Laboratory (VeRLab)</a> at the Department of Computer Science (DCC) of the Universidade Federal de Minas Gerais (UFMG) in Brazil. I previously was an assistant researcher in robotics and AI at the Instituto Tecnologico Vale (ITV), and currently, I'm a Computer Research Scientist at Komatsu's group (Modular Mining Systems). I have a bachelor's in Computer Science from Universidad Nueva Esparta (2011) and an MSc in Robotics from UFMG (2015). 
+I'm a Ph.D. graduate from the <a href="https://www.verlab.dcc.ufmg.br/">Computer Vision and Robotics Laboratory (VeRLab)</a> at the Department of Computer Science (DCC) of the Universidade Federal de Minas Gerais (UFMG) in Brazil. I previously was an assistant researcher in robotics and AI at the Instituto Tecnologico Vale (ITV), and currently, I'm a Computer Research Scientist at Komatsu's group (Modular Mining Systems). I have a bachelor’s in Computer Science from Universidad Nueva Esparta (2011), an MSc in Robotics from UFMG (2015), and currently pursuing an MBA in project management at Universidade de São Paulo (USP).
 
 My research interest includes Robotics, Artificial Intelligence, and Digital Security, emphasizing mobile robotics, machine learning, and real-time strategy games.
 
@@ -71,9 +71,3 @@ My research interest includes Robotics, Artificial Intelligence, and Digital Sec
     </ul>
   </div>
 </div>
-
-<!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
