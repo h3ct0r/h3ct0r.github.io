@@ -18,8 +18,8 @@ nav_order: 1
 
 <div class="publications">
     <h3>Downloads</h3>
-    <p><i class="fa fa-book" aria-hidden="true"></i><a href="https://homepages.dcc.ufmg.br/~hector.azpurua/CTDR_ago22_hector_azpurua_small.pdf">&nbsp;Ph.D. dissertation</a></p>
-    <p><i class="fab fa-github-alt" aria-hidden="true"></i><a href="https://github.com/verlab/terrain_aware_exploration">&nbsp;Github source code</a></p>
+    <p><i class="fa fa-book" aria-hidden="true"></i><a href="https://repositorio.ufmg.br/bitstream/1843/44581/3/RC9_bibloteca_fix_summario.pdf">&nbsp;Ph.D. dissertation PDF document</a></p>
+    <p><i class="fab fa-github-alt" aria-hidden="true"></i><a href="https://github.com/verlab/terrain_aware_exploration">&nbsp;Github source code (ROS1, C++ and Python)</a></p>
 </div>
 
 <div class="publications">
