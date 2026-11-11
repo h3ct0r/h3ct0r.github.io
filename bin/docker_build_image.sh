@@ -1,5 +1,3 @@
-  FILE=Gemfile.lock
-if [ -f "$FILE" ]; then
-    rm $FILE
-fi
-  docker build -t "al-folio:latest" . 
+#!/usr/bin/env bash
+set -euo pipefail
+docker build -t "h3ct0r-site:latest" .

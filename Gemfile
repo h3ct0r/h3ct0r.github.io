@@ -1,8 +1,10 @@
 source 'https://rubygems.org'
+
+ruby '>= 3.3'
+
 group :jekyll_plugins do
-    gem 'jekyll'
+    gem 'jekyll', '~> 4.4'
     gem 'jekyll-archives'
-    gem 'jekyll-diagrams'
     gem 'jekyll-email-protect'
     gem 'jekyll-feed'
     gem 'jekyll-imagemagick'
@@ -11,13 +13,10 @@ group :jekyll_plugins do
     gem 'jekyll-scholar'
     gem 'jekyll-sitemap'
     gem 'jekyll-target-blank'
-    gem 'jekyll-twitter-plugin'
     gem 'jemoji'
-    gem 'mini_racer'
-    gem 'unicode_utils'
-    gem 'webrick'
 end
 group :other_plugins do
     gem 'httparty'
     gem 'feedjira'
 end
+gem 'webrick'

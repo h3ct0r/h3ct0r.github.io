@@ -70,7 +70,7 @@ gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
 linkedin_username: hectorazp # your LinkedIn user name
 scholar_userid: exfaeS8AAAAJ # your Google Scholar ID
-orcid_id: # 0000-0002-4182-2540
+orcid_id: 0000-0002-4182-2540
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
@@ -90,7 +90,6 @@ contact_note: Linkedin/e-mail are the best ways to contact me.
 # -----------------------------------------------------------------------------
 
 google_analytics:  # your Goole Analytics measurement ID (format: G-XXXXXXXXXX)
-panelbear_analytics:  # panelbear analytics site ID (format: XXXXXXXXX)
 
 google_site_verification:  # your google-site-verification ID (Google Search Console)
 bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
@@ -109,15 +108,15 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
 # If you have blog posts published on medium.com or other exteranl sources,
 # you can display them in your blog by adding a link to the RSS feed.
 external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
+#  - name: medium.com
+#    rss_url: https://medium.com/@your-username/feed
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -160,6 +159,12 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - Dockerfile
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - ignore
+  - .github
 keep_files:
   - CNAME
   - .nojekyll
@@ -168,7 +173,6 @@ keep_files:
 # Plug-ins
 plugins:
   - jekyll-archives
-  - jekyll-diagrams
   - jekyll-email-protect
   - jekyll-feed
   - jekyll-imagemagick
@@ -177,7 +181,6 @@ plugins:
   - jekyll/scholar
   - jekyll-sitemap
   - jekyll-target-blank
-  - jekyll-twitter-plugin
   - jemoji
 
 # Sitemap settings
@@ -193,8 +196,6 @@ defaults:
 
 jekyll-minifier:
   exclude: ['robots.txt']
-  uglifier_args:
-    harmony: true
 
 # -----------------------------------------------------------------------------
 # Jekyll Archives
@@ -269,20 +270,10 @@ imagemagick:
     webp: "-resize 800x"
 
 # -----------------------------------------------------------------------------
-# Jekyll Diagrams
-# -----------------------------------------------------------------------------
-
-jekyll-diagrams:
-    # configuration, see https://github.com/zhustec/jekyll-diagrams.
-    # feel free to comment out this section if not using jekyll diagrams.
-
-
-# -----------------------------------------------------------------------------
 # Optional Features
 # -----------------------------------------------------------------------------
 
 enable_google_analytics:    false  # enables google analytics
-enable_panelbear_analytics: false  # enables panelbear analytics
 enable_google_verification: false  # enables google site verification
 enable_bing_verification:   false  # enables bing site verification
 enable_masonry:             true   # enables automatic project cards arangement
@@ -302,21 +293,25 @@ enable_medium_zoom:         true   # enables image zoom feature (as on medium.co
 # -----------------------------------------------------------------------------
 
 academicons:
-  version: "1.9.1"
-  integrity: "sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg="
+  version: "1.9.5"
+  integrity: "sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw="
 bootstrap:
-  version: "4.6.1"
+  version: "4.6.2"
   integrity:
-    css: "sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY="
-    js: "sha256-fgLAgv7fyCGopR/gBNq2iW3ZKIdqIcyshnUULC4vex8="
+    css: "sha256-+IZRbz1B6ee9mUx/ejmonK+ulIP5A5bLDd6v6NHqXnI="
+    js: "sha256-GRJrh0oydT1CwS36bBeJK/2TggpaUQC6GzTaTQdZm0k="
 fontawesome:
-  version: "5.15.4"
-  integrity: "sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4="
+  version: "6.7.2"
+  integrity: "sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo="
+imagesloaded:
+  version: "5.0.0"
+  integrity: "sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc="
 jquery:
-  version: "3.6.0"
-  integrity: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  version: "3.7.1"
+  integrity: "sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
 mathjax:
-  version: "3.2.0"
+  version: "3.2.2"
+  integrity: "sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="
 masonry:
   version: "4.2.2"
   integrity: "sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI="
@@ -326,5 +321,7 @@ mdb:
     css: "sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw="
     js: "sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA="
 medium_zoom:
-  version: "1.0.6"
-  integrity: "sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM="
+  version: "1.1.0"
+  integrity: "sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc="
+pygments_themes:
+  commit: "fead13aa9a6f3216ecc9c5758319a3d5d1236835"

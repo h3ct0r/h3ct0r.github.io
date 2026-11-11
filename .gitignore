@@ -1,0 +1,9 @@
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+.tweet-cache/
+.bundle/
+vendor/
+.DS_Store
+ignore/
