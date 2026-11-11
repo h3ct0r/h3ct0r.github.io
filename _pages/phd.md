@@ -3,7 +3,7 @@ layout: page
 permalink: /phd/
 title: Ph.D.
 description: Dissertation in the autonomous exploration of confined and subterranean spaces
-nav: true
+nav: false
 nav_order: 1
 ---
 
@@ -72,12 +72,12 @@ nav_order: 1
     <h3>Thesis Related Publications</h3>
     {% bibliography -f journal -q @*[phd=true]* %}
     {% bibliography -f conference -q @*[phd=true]* %}
-    {% bibliography -f workshop -q @*[phd=true]* %}
+    {% bibliography -f abstract -q @*[phd=true]* %}
 </div>
 
 <div class="publications">
     <h3>Other Associated Publications</h3>
     {% bibliography -f journal -q @*[otherphd=true]* %}
     {% bibliography -f conference -q @*[otherphd=true]* %}
-    {% bibliography -f workshop -q @*[otherphd=true]* %}
+    {% bibliography -f abstract -q @*[otherphd=true]* %}
 </div>

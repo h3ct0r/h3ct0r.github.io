@@ -1,0 +1,13 @@
+<!-- _includes/group_list.html: current students of one level (include.level) -->
+{%- assign list = include.students | where: "level", include.level -%}
+{%- if list.size > 0 %}
+<h2>{{ include.title }}</h2>
+<ul class="people">
+  {%- for s in list %}
+  <li>
+    <span class="name">{{ s.name }}</span>{% if s.role == "co-advisor" %} <span class="role">co-advised</span>{% endif %}
+    <div class="topic">{{ s.topic }} <span class="since">· since {{ s.since }}</span></div>
+  </li>
+  {%- endfor %}
+</ul>
+{%- endif %}

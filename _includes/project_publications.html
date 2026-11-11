@@ -1,0 +1,7 @@
+<!-- _includes/project_publications.html: publications tagged with include.tag (bib field "project") -->
+<div class="publications">
+  <h2>Publications</h2>
+  {% bibliography -f journal -q @*[project~={{ include.tag }}]* %}
+  {% bibliography -f conference -q @*[project~={{ include.tag }}]* %}
+  {% bibliography -f abstract -q @*[project~={{ include.tag }}]* %}
+</div>

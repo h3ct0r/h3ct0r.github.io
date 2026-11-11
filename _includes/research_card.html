@@ -1,0 +1,15 @@
+<!-- _includes/research_card.html -->
+<div class="col mb-4">
+  <a class="card research-card h-100 hoverable" href="{% if project.redirect %}{{ project.redirect | relative_url }}{% else %}{{ project.url | relative_url }}{% endif %}">
+    {%- if project.img %}
+    <img class="card-img-top" src="{{ project.img | relative_url }}" alt="{{ project.title | escape }}" loading="lazy">
+    {%- endif %}
+    <div class="card-body">
+      <h3 class="card-title">{{ project.title }}</h3>
+      {%- if project.years or project.role %}
+      <p class="card-meta">{{ project.years }}{% if project.years and project.role %} · {% endif %}{{ project.role }}</p>
+      {%- endif %}
+      <p class="card-text">{{ project.description }}</p>
+    </div>
+  </a>
+</div>

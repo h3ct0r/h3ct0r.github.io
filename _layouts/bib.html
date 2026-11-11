@@ -27,96 +27,47 @@
           <div class="title">{{entry.title}}</div>
           <!-- Author -->
           <div class="author">
-          {% assign author_array_size = entry.author_array | size %}
-
-          {%- if site.max_author_limit and author_array_size > site.max_author_limit %}
-            {% assign author_array_limit = site.max_author_limit %}
-          {% else %}
-            {% assign author_array_limit = author_array_size %}
-          {% endif %}
-
-          {%- for author in entry.author_array limit: author_array_limit -%}
-            {%- assign author_is_self = false -%}
-            {%- if author.last == site.scholar.last_name %}
-              {%- if site.scholar.first_name contains author.first -%}
-                {%- assign author_is_self = true -%}
-              {%- endif -%}
+          {%- assign authors = entry.author_array -%}
+          {%- assign n_authors = authors | size -%}
+          {%- assign limit = site.max_author_limit | default: n_authors -%}
+          {%- if n_authors <= limit -%}{%- assign limit = n_authors -%}{%- endif -%}
+          {%- assign self_index = 0 -%}
+          {%- for a in authors -%}
+            {%- if a.last == site.scholar.last_name and site.scholar.first_name contains a.first -%}
+              {%- assign self_index = forloop.index -%}
+              {%- break -%}
             {%- endif -%}
-            {%- assign coauthor_url = nil -%}
-            {%- if site.data.coauthors[author.last] -%}
-              {%- for coauthor in site.data.coauthors[author.last] -%}
-                {%- if coauthor.firstname contains author.first -%}
-                  {%- assign coauthor_url = coauthor.url -%}
-                  {%- break -%}
-                {%- endif -%}
-              {%- endfor -%}
-            {%- endif -%}
-            
-            {%- if forloop.length == 1 -%}
-              {%- if author_is_self %}
-                <em>{{author.last}}, {{author.first}}</em>
-              {%- else -%}
-                {{author.last}}, {{author.first}}
-              {%- endif -%}
-            {%- else -%}
-              {%- unless forloop.last -%}
-                {% if author_is_self %}
-                  <em>{{author.last}}, {{author.first}}</em>,&nbsp;
-                {%- else -%}
-                  {% if coauthor_url -%}
-                    <a href="{{coauthor_url}}">{{author.last}}, {{author.first}}</a>,&nbsp;
-                  {%- else -%}
-                    {{author.last}}, {{author.first}},&nbsp;
-                  {%- endif -%}
-                {%- endif -%}
-              {%- else -%}
-                {%- if author_array_limit == author_array_size %} and {% endif %}
-                {% if author_is_self -%}
-                  <em>{{author.last}}, {{author.first}}</em>
-                {% else -%}
-                  {%- if coauthor_url -%}
-                    <a href="{{coauthor_url}}">{{author.last}}, {{author.first}}</a>
-                  {% else -%}
-                    {{author.last}}, {{author.first}}
-                  {%- endif -%}
-                {%- endif -%}
-              {%- endunless -%}
-            {%- endif -%}
-          {%- endfor %}
-
-          {% assign more_authors = author_array_size | minus: author_array_limit %}
-
-          {%- if more_authors > 0 %}
-            {% assign more_authors_hide = more_authors | append: " more author" %}
-            {% if more_authors > 1 %}
-              {% assign more_authors_hide = more_authors_hide | append: "s" %}
-            {% endif %}
-            {% assign more_authors_show = '' %}
-            {%- for author in entry.author_array offset: author_array_limit -%}
-              {% assign more_authors_show = more_authors_show | append: author.last | append: ", " | append: author.first %}
-              {% unless forloop.last %}
-                {% assign more_authors_show = more_authors_show | append: ",&nbsp;" %}
-              {% endunless %}
+          {%- endfor -%}
+          {%- capture full_list -%}
+            {%- for a in authors -%}
+              {%- if forloop.index == self_index -%}<em>{{ a.last }}, {{ a.first }}</em>{%- else -%}{{ a.last }}, {{ a.first }}{%- endif -%}
+              {%- unless forloop.last -%}{%- if forloop.rindex == 2 %} and {% else %}, {% endif -%}{%- endunless -%}
             {%- endfor -%}
-            and
-            <span
-                class="more-authors"
-                title="click to view {{more_authors_hide}}"
-                onclick="
-                  var element = $(this);
-                  element.attr('title', '');
-                  var more_authors_text = element.text() == '{{more_authors_hide}}' ? '{{more_authors_show}}' : '{{more_authors_hide}}';
-                  var cursorPosition = 0;
-                  var textAdder = setInterval(function(){
-                    element.text(more_authors_text.substring(0, cursorPosition + 1));
-                    if (++cursorPosition == more_authors_text.length){
-                      clearInterval(textAdder);
-                    }
-                  }, 15);
-                "
-            >{{more_authors_hide}}</span>
-          {% endif %}
-
+          {%- endcapture -%}
+          {%- if limit == n_authors -%}
+            {{ full_list }}
+          {%- else -%}
+            {%- assign hidden = n_authors | minus: limit -%}
+            {%- assign self_beyond = false -%}
+            {%- if self_index > limit -%}
+              {%- assign self_beyond = true -%}
+              {%- assign hidden = hidden | minus: 1 -%}
+            {%- endif -%}
+            {%- assign next_index = limit | plus: 1 -%}
+            <span class="authors-short">
+              {%- for a in authors limit: limit -%}
+                {%- if forloop.index == self_index -%}<em>{{ a.last }}, {{ a.first }}</em>{%- else -%}{{ a.last }}, {{ a.first }}{%- endif -%}
+                {%- unless forloop.last -%}, {% endunless -%}
+              {%- endfor -%}
+              {%- if self_beyond -%}
+                {%- if hidden == 0 %} and {% else %}, {% endif -%}
+                {%- if self_index > next_index -%}&hellip;, {% endif -%}
+                <em>{{ site.scholar.last_name }}, {{ site.scholar.first_name | first }}</em>
+              {%- endif -%}
+              {%- if hidden > 0 %} and <a class="more-authors" role="button" tabindex="0">{{ hidden }} more author{% if hidden > 1 %}s{% endif %}</a>{% endif -%}
+            </span>
+            <span class="authors-full d-none">{{ full_list }}</span>
+          {%- endif %}
           </div>
 
           <!-- Journal/Book title and date -->
@@ -132,15 +83,24 @@
           {%- endif -%}
           {%- if entry.year -%}
             {%- capture entryyear -%}{{ " " }}{{entry.year}}{%- endcapture -%}
+            {%- if entry.type == "inproceedings" and entry.booktitle contains entry.year -%}
+              {%- assign entryyear = "" -%}
+            {%- endif -%}
           {%- endif -%}
           {%- capture periodical -%}{{ entrytype }}{{ entrymonth }}{{ entryyear }}{%- endcapture -%}
           <div class="periodical">
             {{ periodical | strip }}
           </div>
+          {%- if entry.award %}
+          <div class="award"><i class="fas fa-trophy" aria-hidden="true"></i> {{ entry.award }}</div>
+          {%- endif %}
         {%- endif %}
         
           <!-- Links/Buttons -->
           <div class="links">
+          {%- if entry.doi %}
+            <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
+          {%- endif %}
           {%- if entry.abstract %}
             <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
           {%- endif %}

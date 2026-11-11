@@ -1,0 +1,1226 @@
+{
+ "10.1002/rob.21909": {
+  "authors": [
+   [
+    "Azpúrua",
+    "Héctor"
+   ],
+   [
+    "Potje",
+    "Guilherme A."
+   ],
+   [
+    "Rezeck",
+    "Paulo A. F."
+   ],
+   [
+    "Freitas",
+    "Gustavo M."
+   ],
+   [
+    "Uzeda Garcia",
+    "Luis G."
+   ],
+   [
+    "Nascimento",
+    "Erickson R."
+   ],
+   [
+    "Macharet",
+    "Douglas G."
+   ],
+   [
+    "Campos",
+    "Mario F. M."
+   ]
+  ],
+  "number": "8",
+  "pages": "1378--1398",
+  "title": "Cooperative digital magnetic‐elevation maps by small autonomous aerial robots",
+  "volume": "36"
+ },
+ "10.1007/s10514-023-10100-0": {
+  "authors": [
+   [
+    "Rezeck",
+    "Paulo"
+   ],
+   [
+    "Azpúrua",
+    "Héctor"
+   ],
+   [
+    "Corrêa",
+    "Maurício F. S."
+   ],
+   [
+    "Chaimowicz",
+    "Luiz"
+   ]
+  ],
+  "number": "7",
+  "pages": "879--903",
+  "title": "HeRo 2.0: a low-cost robot for swarm robotics research",
+  "volume": "47"
+ },
+ "10.1007/s10846-019-01126-7": {
+  "authors": [
+   [
+    "Santos",
+    "Elerson R. S."
+   ],
+   [
+    "Azpurua",
+    "Hector"
+   ],
+   [
+    "Rezeck",
+    "Paulo A. F."
+   ],
+   [
+    "Corrêa",
+    "Maurício F. S."
+   ],
+   [
+    "Vieira",
+    "Marcos A. M."
+   ],
+   [
+    "Freitas",
+    "Gustavo M."
+   ],
+   [
+    "Macharet",
+    "Douglas G."
+   ]
+  ],
+  "number": "3-4",
+  "pages": "571--587",
+  "title": "Localization Using Ultra Wideband and IEEE 802.15.4 Radios with Nonlinear Bayesian Filters: a Comparative Study",
+  "volume": "99"
+ },
+ "10.1007/s10846-021-01321-5": {
+  "authors": [
+   [
+    "Azpúrua",
+    "Héctor"
+   ],
+   [
+    "Rezende",
+    "Adriano"
+   ],
+   [
+    "Potje",
+    "Guilherme"
+   ],
+   [
+    "Júnior",
+    "Gilmar Pereira da Cruz"
+   ],
+   [
+    "Fernandes",
+    "Rafael"
+   ],
+   [
+    "Miranda",
+    "Victor"
+   ],
+   [
+    "Filho",
+    "Levi Welington de Resende"
+   ],
+   [
+    "Domingues",
+    "Jacó"
+   ],
+   [
+    "Rocha",
+    "Filipe"
+   ],
+   [
+    "de Sousa",
+    "Frederico Luiz Martins"
+   ],
+   [
+    "de Barros",
+    "Luiz Guilherme Dias"
+   ],
+   [
+    "Nascimento",
+    "Erickson R."
+   ],
+   [
+    "Macharet",
+    "Douglas G."
+   ],
+   [
+    "Pessin",
+    "Gustavo"
+   ],
+   [
+    "Freitas",
+    "Gustavo M."
+   ]
+  ],
+  "number": "4",
+  "pages": "69",
+  "title": "Towards Semi-autonomous Robotic Inspection and Mapping in Confined Spaces with the EspeleoRobô",
+  "volume": "101"
+ },
+ "10.1007/s10846-021-01459-2": {
+  "authors": [
+   [
+    "Rocha",
+    "Filipe"
+   ],
+   [
+    "Garcia",
+    "Gabriel"
+   ],
+   [
+    "Pereira",
+    "Raphael F. S."
+   ],
+   [
+    "Faria",
+    "Henrique D."
+   ],
+   [
+    "Silva",
+    "Thales H."
+   ],
+   [
+    "Andrade",
+    "Ricardo H. R."
+   ],
+   [
+    "Barbosa",
+    "Evelyn S."
+   ],
+   [
+    "Almeida",
+    "André"
+   ],
+   [
+    "Cruz",
+    "Emanuel"
+   ],
+   [
+    "Andrade",
+    "Wagner"
+   ],
+   [
+    "Serrantola",
+    "Wenderson G."
+   ],
+   [
+    "Moura",
+    "Luiz"
+   ],
+   [
+    "Azpúrua",
+    "Héctor"
+   ],
+   [
+    "Franca",
+    "André"
+   ],
+   [
+    "Pessin",
+    "Gustavo"
+   ],
+   [
+    "Freitas",
+    "Gustavo M."
+   ],
+   [
+    "Costa",
+    "Ramon R."
+   ],
+   [
+    "Lizarralde",
+    "Fernando"
+   ]
+  ],
+  "number": "2",
+  "pages": "30",
+  "title": "ROSI: A Robotic System for Harsh Outdoor Industrial Inspection - System Design and Applications",
+  "volume": "103"
+ },
+ "10.1007/s10846-024-02112-4": {
+  "authors": [
+   [
+    "Cid",
+    "André"
+   ],
+   [
+    "Vangasse",
+    "Arthur"
+   ],
+   [
+    "Campos",
+    "Sofia"
+   ],
+   [
+    "Delunardo",
+    "Mário"
+   ],
+   [
+    "Cruz Júnior",
+    "Gilmar"
+   ],
+   [
+    "Neto",
+    "Nilton"
+   ],
+   [
+    "Pimenta",
+    "Luciano"
+   ],
+   [
+    "Domingues",
+    "Jacó"
+   ],
+   [
+    "Barros",
+    "Luiz"
+   ],
+   [
+    "Azpúrua",
+    "Hector"
+   ],
+   [
+    "Pessin",
+    "Gustavo"
+   ],
+   [
+    "Freitas",
+    "Gustavo"
+   ]
+  ],
+  "number": "2",
+  "pages": "88",
+  "title": "Wireless Communication-aware Path Planning and Multiple Robot Navigation Strategies for Assisted Inspections",
+  "volume": "110"
+ },
+ "10.1007/s10846-026-02410-z": {
+  "authors": [
+   [
+    "Silva Pereira Junior",
+    "Renato"
+   ],
+   [
+    "Quaresma",
+    "Luciano"
+   ],
+   [
+    "Delunardo",
+    "Mário"
+   ],
+   [
+    "Cid",
+    "André"
+   ],
+   [
+    "Rêgo Segundo",
+    "Alan"
+   ],
+   [
+    "Allan Reis",
+    "Marcos"
+   ],
+   [
+    "Guilherme Barros",
+    "Luiz"
+   ],
+   [
+    "Azpúrua",
+    "Héctor"
+   ],
+   [
+    "Pessin",
+    "Gustavo"
+   ],
+   [
+    "Freitas",
+    "Gustavo"
+   ]
+  ],
+  "number": "4",
+  "pages": "98",
+  "title": "Terrain Classification Based on RNNs for Ground Robots Using a Custom Instrumented Wheel with Nano-Structured Sensors",
+  "volume": "112"
+ },
+ "10.1007/s11370-021-00385-4": {
+  "authors": [
+   [
+    "Rezende",
+    "Adriano M. C."
+   ],
+   [
+    "Miranda",
+    "Victor R. F."
+   ],
+   [
+    "Rezeck",
+    "Paulo A. F."
+   ],
+   [
+    "Azpúrua",
+    "Héctor"
+   ],
+   [
+    "Santos",
+    "Elerson R. S."
+   ],
+   [
+    "Gonçalves",
+    "Vinicius M."
+   ],
+   [
+    "Macharet",
+    "Douglas G."
+   ],
+   [
+    "Freitas",
+    "Gustavo M."
+   ]
+  ],
+  "number": "5",
+  "pages": "641--661",
+  "title": "An integrated solution for an autonomous drone racing in indoor environments",
+  "volume": "14"
+ },
+ "10.1007/s40313-021-00828-4": {
+  "authors": [
+   [
+    "Miranda",
+    "Victor R. F."
+   ],
+   [
+    "Rezende",
+    "Adriano M. C."
+   ],
+   [
+    "Rocha",
+    "Thiago L."
+   ],
+   [
+    "Azpúrua",
+    "Héctor"
+   ],
+   [
+    "Pimenta",
+    "Luciano C. A."
+   ],
+   [
+    "Freitas",
+    "Gustavo M."
+   ]
+  ],
+  "number": "1",
+  "pages": "141--155",
+  "title": "Autonomous Navigation System for a Delivery Drone",
+  "volume": "33"
+ },
+ "10.1007/s40313-022-00919-w": {
+  "authors": [
+   [
+    "de Barros",
+    "Luiz Guilherme Dias"
+   ],
+   [
+    "Santos",
+    "Luan Fernandes"
+   ],
+   [
+    "Azpúrua",
+    "Héctor"
+   ],
+   [
+    "von Pritzelwitz",
+    "Philip"
+   ],
+   [
+    "Pessin",
+    "Gustavo"
+   ],
+   [
+    "Freitas",
+    "Gustavo Medeiros"
+   ]
+  ],
+  "number": "6",
+  "pages": "1747--1761",
+  "title": "Automatic Procedure for Steel Cord Belt Splicing Preparation",
+  "volume": "33"
+ },
+ "10.1007/s40313-024-01135-4": {
+  "authors": [
+   [
+    "de S Thiago Filho",
+    "Alexandre Magno"
+   ],
+   [
+    "Amaral",
+    "Israel Filipe S."
+   ],
+   [
+    "de S Thiago Neto",
+    "Nilton Costa Pereira"
+   ],
+   [
+    "Torres",
+    "Mário César Delunardo"
+   ],
+   [
+    "Rezende",
+    "Adriano"
+   ],
+   [
+    "Cruz Júnior",
+    "Gilmar P."
+   ],
+   [
+    "Júnior",
+    "Renato Silva Pereira"
+   ],
+   [
+    "Cid",
+    "André Luiz Maciel"
+   ],
+   [
+    "Domingues",
+    "Jacó Dias"
+   ],
+   [
+    "de Barros",
+    "Luiz Guilherme Dias"
+   ],
+   [
+    "Azpúrua",
+    "Héctor"
+   ],
+   [
+    "Pessin",
+    "Gustavo"
+   ],
+   [
+    "Freitas",
+    "Gustavo Medeiros"
+   ]
+  ],
+  "number": "1",
+  "pages": "101--116",
+  "title": "Robotic Pipe Inspection: Low-Cost Device and Navigation System",
+  "volume": "36"
+ },
+ "10.1007/s42979-025-04244-2": {
+  "authors": [
+   [
+    "Garcia",
+    "Rodrigo Dutra"
+   ],
+   [
+    "Henriques",
+    "Miguel Bragante"
+   ],
+   [
+    "Cid",
+    "André Luiz Maciel"
+   ],
+   [
+    "da Cruz Júnior",
+    "Gilmar Pereira"
+   ],
+   [
+    "Azpúrua",
+    "Héctor"
+   ],
+   [
+    "Ramachandran",
+    "Gowri"
+   ],
+   [
+    "Saboia",
+    "Maíra"
+   ],
+   [
+    "Freitas",
+    "Gustavo M."
+   ],
+   [
+    "Pessin",
+    "Gustavo"
+   ],
+   [
+    "Ueyama",
+    "Jó"
+   ]
+  ],
+  "number": "6",
+  "pages": "694",
+  "title": "Towards an Automated and Auditable Industrial Safety Inspection Using Robots and Blockchain",
+  "volume": "6"
+ },
+ "10.1016/j.robot.2022.104304": {
+  "authors": [
+   [
+    "Azpúrua",
+    "Héctor"
+   ],
+   [
+    "Saboia",
+    "Maíra"
+   ],
+   [
+    "Freitas",
+    "Gustavo M."
+   ],
+   [
+    "Clark",
+    "Lillian"
+   ],
+   [
+    "Agha-mohammadi",
+    "Ali-akbar"
+   ],
+   [
+    "Pessin",
+    "Gustavo"
+   ],
+   [
+    "Campos",
+    "Mario F.M."
+   ],
+   [
+    "Macharet",
+    "Douglas G."
+   ]
+  ],
+  "number": "",
+  "pages": "104304",
+  "title": "A Survey on the autonomous exploration of confined subterranean spaces: Perspectives from real-word and industrial robotic deployments",
+  "volume": "160"
+ },
+ "10.1017/s0263574718000292": {
+  "authors": [
+   [
+    "Azpúrua",
+    "Héctor"
+   ],
+   [
+    "Freitas",
+    "Gustavo M."
+   ],
+   [
+    "Macharet",
+    "Douglas G."
+   ],
+   [
+    "Campos",
+    "Mario F. M."
+   ]
+  ],
+  "number": "8",
+  "pages": "1144--1166",
+  "title": "Multi-robot coverage path planning using hexagonal segmentation for geophysical surveys",
+  "volume": "36"
+ },
+ "10.1109/coase.2016.7743569": {
+  "authors": [
+   [
+    "Perez-imaz",
+    "Hector I. A."
+   ],
+   [
+    "Rezeck",
+    "Paulo A. F."
+   ],
+   [
+    "Macharet",
+    "Douglas G."
+   ],
+   [
+    "Campos",
+    "Mario F. M."
+   ]
+  ],
+  "number": "",
+  "pages": "1374--1379",
+  "title": "Multi-robot 3D coverage path planning for First Responders teams",
+  "volume": ""
+ },
+ "10.1109/sbgames.2014.17": {
+  "authors": [
+   [
+    "Tavares",
+    "Anderson R."
+   ],
+   [
+    "Azpurua",
+    "Hector"
+   ],
+   [
+    "Chaimowicz",
+    "Luiz"
+   ]
+  ],
+  "number": "",
+  "pages": "99--108",
+  "title": "Evolving Swarm Intelligence for Task Allocation in a Real Time Strategy Game",
+  "volume": ""
+ },
+ "10.1109/tase.2022.3169442": {
+  "authors": [
+   [
+    "Junior",
+    "Gilmar P. Cruz"
+   ],
+   [
+    "Rezende",
+    "Adriano M. C."
+   ],
+   [
+    "Miranda",
+    "Victor R. F."
+   ],
+   [
+    "Fernandes",
+    "Rafael"
+   ],
+   [
+    "Azpurua",
+    "Hector"
+   ],
+   [
+    "Neto",
+    "Armando A."
+   ],
+   [
+    "Pessin",
+    "Gustavo"
+   ],
+   [
+    "Freitas",
+    "Gustavo M."
+   ]
+  ],
+  "number": "3",
+  "pages": "1458--1471",
+  "title": "EKF-LOAM: An Adaptive Fusion of LiDAR SLAM With Wheel Odometry and Inertial Data for Confined Spaces With Few Geometric Features",
+  "volume": "19"
+ },
+ "10.1109/tfr.2024.3430891": {
+  "authors": [
+   [
+    "Morrell",
+    "Benjamin"
+   ],
+   [
+    "Otsu",
+    "Kyohei"
+   ],
+   [
+    "Agha",
+    "Ali"
+   ],
+   [
+    "Fan",
+    "David D."
+   ],
+   [
+    "Kim",
+    "Sung-Kyun"
+   ],
+   [
+    "Ginting",
+    "Muhammad Fadhil"
+   ],
+   [
+    "Lei",
+    "Xianmei"
+   ],
+   [
+    "Edlund",
+    "Jeffrey"
+   ],
+   [
+    "Fakoorian",
+    "Seyed"
+   ],
+   [
+    "Bouman",
+    "Amanda"
+   ],
+   [
+    "Chavez",
+    "Fernando"
+   ],
+   [
+    "Kim",
+    "Taeyeon"
+   ],
+   [
+    "Correa",
+    "Gustavo J."
+   ],
+   [
+    "Saboia",
+    "Maira"
+   ],
+   [
+    "Santamaria-Navarro",
+    "Angel"
+   ],
+   [
+    "Lopez",
+    "Brett"
+   ],
+   [
+    "Kim",
+    "Boseong"
+   ],
+   [
+    "Jung",
+    "Chanyoung"
+   ],
+   [
+    "Sobue",
+    "Mamoru"
+   ],
+   [
+    "Peltzer",
+    "Oriana Claudia"
+   ],
+   [
+    "Ott",
+    "Joshua"
+   ],
+   [
+    "Trybula",
+    "Robert"
+   ],
+   [
+    "Touma",
+    "Thomas"
+   ],
+   [
+    "Kaufmann",
+    "Marcel"
+   ],
+   [
+    "Vaquero",
+    "Tiago Stegun"
+   ],
+   [
+    "Pailevanian",
+    "Torkom"
+   ],
+   [
+    "Palieri",
+    "Matteo"
+   ],
+   [
+    "Chang",
+    "Yun"
+   ],
+   [
+    "Reinke",
+    "Andrzej"
+   ],
+   [
+    "Anderson",
+    "Matthew"
+   ],
+   [
+    "Schöller",
+    "Frederik E. T."
+   ],
+   [
+    "Spieler",
+    "Patrick"
+   ],
+   [
+    "Clark",
+    "Lillian M."
+   ],
+   [
+    "Archanian",
+    "Avak"
+   ],
+   [
+    "Chen",
+    "Kenny"
+   ],
+   [
+    "Melikyan",
+    "Hovhannes"
+   ],
+   [
+    "Dixit",
+    "Anushri"
+   ],
+   [
+    "Delecki",
+    "Harrison"
+   ],
+   [
+    "Pastor",
+    "Daniel"
+   ],
+   [
+    "Ridge",
+    "Barry"
+   ],
+   [
+    "Marchal",
+    "Nicolas"
+   ],
+   [
+    "Uribe",
+    "Jose"
+   ],
+   [
+    "Dey",
+    "Sharmita"
+   ],
+   [
+    "Ebadi",
+    "Kamak"
+   ],
+   [
+    "Coble",
+    "Kyle"
+   ],
+   [
+    "Dimopoulos",
+    "Alexander Nikitas"
+   ],
+   [
+    "Thangavelu",
+    "Vivek"
+   ],
+   [
+    "Varadharajan",
+    "Vivek S."
+   ],
+   [
+    "Palomo",
+    "Nicholas"
+   ],
+   [
+    "Rosinol",
+    "Antoni"
+   ],
+   [
+    "Chatterjee",
+    "Arghya"
+   ],
+   [
+    "Kanellakis",
+    "Christoforos"
+   ],
+   [
+    "Lindqvist",
+    "Bjorn"
+   ],
+   [
+    "Corah",
+    "Micah"
+   ],
+   [
+    "Strickland",
+    "Kyle"
+   ],
+   [
+    "Stonebraker",
+    "Ryan"
+   ],
+   [
+    "Milano",
+    "Michael"
+   ],
+   [
+    "Denniston",
+    "Christopher E."
+   ],
+   [
+    "Sahnoune",
+    "Sami"
+   ],
+   [
+    "Claudet",
+    "Thomas"
+   ],
+   [
+    "Lee",
+    "Seungwook"
+   ],
+   [
+    "Salhotra",
+    "Gautam"
+   ],
+   [
+    "Terry",
+    "Edward"
+   ],
+   [
+    "Musuku",
+    "Rithvik"
+   ],
+   [
+    "Schmid",
+    "Robin"
+   ],
+   [
+    "Tran",
+    "Tony"
+   ],
+   [
+    "Kourchians",
+    "Ara"
+   ],
+   [
+    "Schachter",
+    "Justin"
+   ],
+   [
+    "Azpurua",
+    "Hector"
+   ],
+   [
+    "Resende",
+    "Levi"
+   ],
+   [
+    "Kalantari",
+    "Arash"
+   ],
+   [
+    "Nash",
+    "Jeremy"
+   ],
+   [
+    "Lee",
+    "Josh"
+   ],
+   [
+    "Patterson",
+    "Christopher"
+   ],
+   [
+    "Blank",
+    "Jennifer G."
+   ],
+   [
+    "Patath",
+    "Kartik"
+   ],
+   [
+    "Kubo",
+    "Yuki"
+   ],
+   [
+    "Alimo",
+    "Ryan"
+   ],
+   [
+    "Almalioglu",
+    "Yasin"
+   ],
+   [
+    "Curtis",
+    "Aaron"
+   ],
+   [
+    "Sly",
+    "Jacqueline"
+   ],
+   [
+    "Wells",
+    "Tesla"
+   ],
+   [
+    "Ho",
+    "Nhut T."
+   ],
+   [
+    "Kochenderfer",
+    "Mykel"
+   ],
+   [
+    "Beltrame",
+    "Giovanni"
+   ],
+   [
+    "Nikolakopoulos",
+    "George"
+   ],
+   [
+    "Shim",
+    "David"
+   ],
+   [
+    "Carlone",
+    "Luca"
+   ],
+   [
+    "Burdick",
+    "And Joel"
+   ]
+  ],
+  "number": "",
+  "pages": "476--526",
+  "title": "An Addendum to NeBula: Toward Extending Team CoSTAR’s Solution to Larger Scale Environments",
+  "volume": "1"
+ },
+ "10.3390/s16122169": {
+  "authors": [
+   [
+    "Macharet",
+    "Douglas"
+   ],
+   [
+    "Perez-Imaz",
+    "Héctor"
+   ],
+   [
+    "Rezeck",
+    "Paulo"
+   ],
+   [
+    "Potje",
+    "Guilherme"
+   ],
+   [
+    "Benyosef",
+    "Luiz"
+   ],
+   [
+    "Wiermann",
+    "André"
+   ],
+   [
+    "Freitas",
+    "Gustavo"
+   ],
+   [
+    "Garcia",
+    "Luis"
+   ],
+   [
+    "Campos",
+    "Mario"
+   ]
+  ],
+  "number": "12",
+  "pages": "2169",
+  "title": "Autonomous Aeromagnetic Surveys Using a Fluxgate Magnetometer",
+  "volume": "16"
+ },
+ "10.3390/s20082243": {
+  "authors": [
+   [
+    "Carvalho",
+    "Regivaldo"
+   ],
+   [
+    "Nascimento",
+    "Richardson"
+   ],
+   [
+    "D’Angelo",
+    "Thiago"
+   ],
+   [
+    "Delabrida",
+    "Saul"
+   ],
+   [
+    "G. C. Bianchi",
+    "Andrea"
+   ],
+   [
+    "Oliveira",
+    "Ricardo A. R."
+   ],
+   [
+    "Azpúrua",
+    "Héctor"
+   ],
+   [
+    "Uzeda Garcia",
+    "Luis G."
+   ]
+  ],
+  "number": "8",
+  "pages": "2243",
+  "title": "A UAV-Based Framework for Semi-Automated Thermographic Inspection of Belt Conveyors in the Mining Industry",
+  "volume": "20"
+ },
+ "10.5220/0010240803030310": {
+  "authors": [
+   [
+    "Netto",
+    "Guilherme"
+   ],
+   [
+    "Coelho",
+    "Bruno"
+   ],
+   [
+    "Delabrida",
+    "Saul"
+   ],
+   [
+    "Sinatora",
+    "Amilton"
+   ],
+   [
+    "Azpúrua",
+    "Héctor"
+   ],
+   [
+    "Pessin",
+    "Gustavo"
+   ],
+   [
+    "Oliveira",
+    "Ricardo"
+   ],
+   [
+    "Bianchi",
+    "Andrea"
+   ]
+  ],
+  "number": "",
+  "pages": "303--310",
+  "title": "Early Defect Detection in Conveyor Belts using Machine Vision",
+  "volume": ""
+ },
+ "10.5753/jis.2017.671": {
+  "authors": [
+   [
+    "Tavares",
+    "Anderson R."
+   ],
+   [
+    "Zuin",
+    "Gianlucca Lodron"
+   ],
+   [
+    "Azpúrua",
+    "Héctor"
+   ],
+   [
+    "Chaimowicz",
+    "Luiz"
+   ]
+  ],
+  "number": "1",
+  "pages": "",
+  "title": "Combining genetic algorithm and swarm intelligence for task allocation in a real time strategy game",
+  "volume": "8"
+ }
+}

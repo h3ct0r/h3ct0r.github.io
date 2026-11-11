@@ -8,10 +8,11 @@ middle_name:
 last_name: Azpúrua
 email: hector.azpurua@dcc.ufmg.br
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Héctor Azpúrua Ph.D personal webpage.
+  Héctor Azpúrua, Assistant Professor of Computer Science at UFMG. Field robotics:
+  autonomous exploration, mapping and navigation in confined and subterranean spaces.
 footer_text: >
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: robotics, artificial intelligence, deep-learning, machine learning, mobile robotics  # add your own keywords or leave empty
+keywords: robotics, field robotics, autonomous exploration, SLAM, mobile robots, multi-robot systems, aerial robots, robot learning, UFMG
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🤖  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -57,9 +58,9 @@ max_width: 900px
 # Open Graph & Schema.org
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: https://h3ct0r.github.io/assets/img/HECTOR_AZPURUA_300x300_acf_cropped.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -76,14 +77,14 @@ quora_username: # your Quora username
 publons_id: # your ID on Publons
 research_gate_profile: # your profile on ResearchGate
 blogger_url: # your blogger URL
-work_url: # work page URL
+work_url: https://mirarobotica.com # work page URL (MIRA)
 keybase_username: # your keybase user name
 wikidata_id: # your wikidata id
 dblp_url: # your DBLP profile url
 stackoverflow_id: #your stackoverflow id
 lattes_id: 8363001713282037 #your lattes id
 
-contact_note: Linkedin/e-mail are the best ways to contact me.
+contact_note: E-mail is the best way to reach me. Prospective students, please include your CV and research interests.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -130,10 +131,10 @@ collections:
     permalink: /news/:path/
   projects:
     output: true
-    permalink: /projects/:path/
+    permalink: /research/:name/
 
 news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-news_limit: 5 # leave blank to include all the news in the `_news` folder
+news_limit: 8 # leave blank to include all the news in the `_news` folder
 
 # -----------------------------------------------------------------------------
 # Jekyll settings
@@ -244,7 +245,7 @@ scholar:
   query: "@*"
 
 # Filter out certain bibtex entry keywords used internally from the bib output
-filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview]
+filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview, award, project, phd, otherphd, manual]
 
 # Maximum number of authors to be shown, other authors will be visible on hover, leave blank to show all authors
 max_author_limit: 5

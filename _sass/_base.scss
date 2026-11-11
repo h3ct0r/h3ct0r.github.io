@@ -118,6 +118,43 @@ blockquote {
   }
 }
 
+// About page sections
+
+.post-header .desc a {
+  color: var(--global-theme-color);
+}
+
+.research-themes,
+.callout {
+  margin-top: 2rem;
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+.research-themes {
+  ul {
+    padding-left: 1.25rem;
+  }
+  li {
+    margin-bottom: 0.4rem;
+  }
+  .more-link {
+    margin-top: 0.5rem;
+  }
+}
+
+.callout {
+  border-left: 4px solid var(--global-theme-color);
+  background-color: var(--global-code-bg-color);
+  padding: 1rem 1.25rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .post-description {
   margin-bottom: 2rem;
   font-size: 0.875rem;
@@ -459,6 +496,24 @@ footer.sticky-bottom {
 
 // Publications
 
+.pub-summary {
+  margin-bottom: 0.75rem;
+}
+
+.pub-years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.75rem;
+  font-size: 0.9rem;
+  a {
+    color: var(--global-text-color-light);
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
 .publications {
   margin-top: 2rem;
   h1 {
@@ -475,12 +530,21 @@ footer.sticky-bottom {
     }
   }
   h2.year {
-    color: var(--global-divider-color);
+    color: var(--global-text-color-light);
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
     margin-top: 2rem;
-    margin-bottom: -2rem;
+    margin-bottom: 0;
     text-align: right;
+    scroll-margin-top: 4.5rem;
+  }
+  h3.pub-type {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+    margin: 0.75rem 0 1rem;
   }
   ol.bibliography {
     list-style: none;
@@ -517,6 +581,11 @@ footer.sticky-bottom {
       .title {
         font-weight: bolder;
       }
+      .award {
+        color: var(--global-theme-color);
+        font-size: 0.875rem;
+        font-weight: 500;
+      }
       .author {
         a {
           border-bottom: 1px dashed var(--global-theme-color);
@@ -529,7 +598,11 @@ footer.sticky-bottom {
           border-bottom: 1px solid;
           font-style: normal;
         }
-        > span.more-authors {
+        em {
+          border-bottom: 1px solid;
+          font-style: normal;
+        }
+        .more-authors {
           color: var(--global-text-color-light);
           border-bottom: 1px dashed var(--global-text-color-light);
           cursor: pointer;
@@ -652,4 +725,118 @@ html.transition *:after {
       padding: 8px;
     }
   }
+}
+
+// News (home page)
+
+.news {
+  margin-top: 2rem;
+  .news-scroll {
+    max-height: 13rem;
+    overflow-y: auto;
+  }
+  th {
+    white-space: nowrap;
+    width: 6.5rem;
+    font-weight: 500;
+    color: var(--global-text-color-light);
+  }
+}
+
+// Research cards
+
+.research {
+  h2.category {
+    font-size: 1.5rem;
+    color: var(--global-text-color);
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-bottom: 0.5rem;
+    margin: 2rem 0 1.25rem;
+    text-align: left;
+    scroll-margin-top: 4.5rem;
+  }
+  .research-card {
+    background-color: var(--global-card-bg-color);
+    border: 1px solid var(--global-divider-color);
+    color: var(--global-text-color);
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    &:hover {
+      text-decoration: none;
+      border-color: var(--global-theme-color);
+    }
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--global-theme-color);
+      margin-bottom: 0.25rem;
+    }
+    .card-meta {
+      font-size: 0.8rem;
+      color: var(--global-text-color);
+      opacity: 0.7;
+      margin-bottom: 0.5rem;
+    }
+    .card-text {
+      font-size: 0.95rem;
+      color: var(--global-text-color);
+      margin-bottom: 0;
+    }
+  }
+}
+
+a.project-link {
+  color: var(--global-text-color);
+  border: 1px solid var(--global-text-color);
+  padding: 0.25rem 1rem;
+  &:hover {
+    color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+  }
+}
+
+// Group page
+
+.group {
+  h2 {
+    font-size: 1.35rem;
+    margin: 2rem 0 0.75rem;
+  }
+  ul.people {
+    list-style: none;
+    padding-left: 0;
+    li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--global-divider-color);
+    }
+  }
+  .name {
+    font-weight: 500;
+  }
+  .role,
+  .level,
+  .since {
+    font-size: 0.85rem;
+    color: var(--global-text-color-light);
+  }
+  .topic {
+    font-size: 0.95rem;
+  }
+  table.alumni {
+    color: var(--global-text-color);
+    th {
+      width: 4rem;
+      font-weight: 500;
+      color: var(--global-text-color-light);
+    }
+    th, td {
+      border-top: 1px solid var(--global-divider-color);
+    }
+  }
+}
+
+// CV
+
+.cv .cv-year {
+  background-color: var(--global-theme-color);
+  color: #fff;
 }
